@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet private weak var dogLabel: UILabel!
     @IBOutlet private weak var submitButton: UIButton!
     
+    private let machineLearningModel = ImageClassifier()
+    
     @IBAction func didTapSubmit(_ sender: UIButton) {
         let imagePickerViewController = UIImagePickerController()
         imagePickerViewController.delegate = self
@@ -33,7 +35,12 @@ extension ViewController: UIImagePickerControllerDelegate & UINavigationControll
             do {
                 dogImageView.image = dogImage
                 dogImageViewAspectRatio.constant = dogImage.size.width / dogImage.size.height
-                dogLabel.text = "I have no idea what kind of dog this is. WHY DON'T YOU USE MACHINE LEARNING?!"
+                
+                let prediction = try machineLearningModel.prediction(image: pixelBuffer)
+                let typeOfDog = prediction.classLabel
+                let typeOfDogCertainty = prediction.classLabelProbs[typeOfDog] ?? 0.0
+                
+                dogLabel.text = "Our model is \(typeOfDogCertainty)% certain that you have submitted a photo of a \(typeOfDog)"
 
                 UIView.animate(withDuration: 1.0) {
                     self.view.layoutIfNeeded()
