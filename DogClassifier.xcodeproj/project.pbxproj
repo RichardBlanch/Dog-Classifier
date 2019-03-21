@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637EE3B122440B4F00F3518A /* dalmatian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637EE3AE22440B4F00F3518A /* dalmatian.jpg */; };
+		637EE3B222440B4F00F3518A /* poodle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637EE3AF22440B4F00F3518A /* poodle.jpg */; };
+		637EE3B322440B4F00F3518A /* Pug.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 637EE3B022440B4F00F3518A /* Pug.jpeg */; };
 		63F1764F2243011C0042FA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F1764E2243011C0042FA2E /* AppDelegate.swift */; };
 		63F176512243011C0042FA2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F176502243011C0042FA2E /* ViewController.swift */; };
 		63F176A8224306100042FA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F176522243011C0042FA2E /* Main.storyboard */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637EE3AE22440B4F00F3518A /* dalmatian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dalmatian.jpg; sourceTree = "<group>"; };
+		637EE3AF22440B4F00F3518A /* poodle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poodle.jpg; sourceTree = "<group>"; };
+		637EE3B022440B4F00F3518A /* Pug.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pug.jpeg; sourceTree = "<group>"; };
 		63F1764B2243011C0042FA2E /* DogClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F1764E2243011C0042FA2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F176502243011C0042FA2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		637EE3AD22440B4F00F3518A /* Simulator Images */ = {
+			isa = PBXGroup;
+			children = (
+				637EE3AE22440B4F00F3518A /* dalmatian.jpg */,
+				637EE3AF22440B4F00F3518A /* poodle.jpg */,
+				637EE3B022440B4F00F3518A /* Pug.jpeg */,
+			);
+			path = "Simulator Images";
+			sourceTree = "<group>";
+		};
 		63F176422243011C0042FA2E = {
 			isa = PBXGroup;
 			children = (
+				637EE3AD22440B4F00F3518A /* Simulator Images */,
 				63F176A4224303700042FA2E /* CreateDogMLModel.playground */,
 				63F176AC2243FBAC0042FA2E /* Data Set */,
 				63F1764D2243011C0042FA2E /* DogClassifier */,
@@ -225,7 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637EE3B322440B4F00F3518A /* Pug.jpeg in Resources */,
 				63F176A8224306100042FA2E /* Main.storyboard in Resources */,
+				637EE3B222440B4F00F3518A /* poodle.jpg in Resources */,
+				637EE3B122440B4F00F3518A /* dalmatian.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
