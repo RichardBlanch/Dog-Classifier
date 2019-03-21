@@ -33,6 +33,7 @@ extension ViewController: UIImagePickerControllerDelegate & UINavigationControll
             do {
                 dogImageView.image = dogImage
                 dogImageViewAspectRatio.constant = dogImage.size.width / dogImage.size.height
+                dogLabel.text = "I have no idea what kind of dog this is. WHY DON'T YOU USE MACHINE LEARNING?!"
 
                 UIView.animate(withDuration: 1.0) {
                     self.view.layoutIfNeeded()
